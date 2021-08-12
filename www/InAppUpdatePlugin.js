@@ -1,6 +1,6 @@
 var InAppUpdate = {};
 
-InAppUpdate.init = function(success, error) {
+InAppUpdate.check = function(success, error) {
     cordova.exec(success, error, 'InAppUpdatePlugin', 'check', []);
 };
 
