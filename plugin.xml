@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-in-app-update" version="1.0.4">
-    <name>UpdatePlugin</name>
+    <name>InAppUpdate</name>
 
     <description>An Android Cordova plugin that allows users to update app to letest version without leaving the application.</description>
     <license>MIT</license>
@@ -15,16 +15,16 @@
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
   
-    <js-module src="www/updatePlugin.js" name="UpdatePlugin">
-        <clobbers target="window.plugins.updatePlugin" />
+    <js-module src="www/InAppUpdatePlugin.js" name="InAppUpdate">
+        <clobbers target="window.plugins.InAppUpdate" />
     </js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="UpdatePlugin">
-                <param name="android-package" value="com.mrspark.cordova.plugin.UpdatePlugin"/>
+            <feature name="InAppUpdatePlugin">
+                <param name="android-package" value="com.lucario.cordova.plugin.InAppUpdatePlugin"/>
             </feature>
         </config-file>
         <framework src="src/android/build-extra.gradle" custom="true" type="gradleReference" />
-        <source-file src="src/android/UpdatePlugin.java" target-dir="src/com/mrspark/cordova/plugin" />
+        <source-file src="src/android/InAppUpdatePlugin.java" target-dir="src/com/lucario/cordova/plugin" />
     </platform>
 </plugin>
