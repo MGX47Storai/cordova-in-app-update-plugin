@@ -9,6 +9,8 @@ This pluging enabels [In app update] (https://developer.android.com/guide/playco
 
 ## Check Available Update Information
 
+If you want to prompt user with a prompt about new version information before initiating the update, you can use `window.plugins.InAppUpdate.check` to retrive the new app version information.
+
 ```console
 window.plugins.InAppUpdate.check(success, error);
 ```
