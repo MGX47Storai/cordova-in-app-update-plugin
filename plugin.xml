@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-in-app-update" version="1.1.0">
+        id="cordova-in-app-update" version="1.1.01">
     <name>InAppUpdate</name>
 
     <description>An Android Cordova plugin that allows users to update app to latest version without leaving the application.</description>
