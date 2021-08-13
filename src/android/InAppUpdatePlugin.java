@@ -131,7 +131,8 @@ public class InAppUpdatePlugin extends CordovaPlugin {
     private void notifyFlexibleUpdateDownloaded(AppUpdateInfo appUpdateInfo) {
         PluginResult pluginResult = new PluginResult(PluginResult.Status.OK,
                 constructAppUpdateInfo(appUpdateInfo));
-        cordovaCallbackContext.sendPluginResult(pluginResult);
+        if(cordovaCallbackContext != null)
+            cordovaCallbackContext.sendPluginResult(pluginResult);
     }
 
     private JSONObject constructInstallStateInfo(final InstallState installState) {
