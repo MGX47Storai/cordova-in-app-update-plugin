@@ -5,6 +5,12 @@ This pluging enabels [In app update](https://developer.android.com/guide/playcor
 * Flexible update
 * Immidiate update
 
+# Install Plugin
+
+```console
+cordova add plugin @lucario/cordova-in-app-update
+```
+
 # Examples
 
 ## Check Available Update Information
