@@ -20,7 +20,7 @@ import org.apache.cordova.CordovaWebView;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.support.design.widget.Snackbar;
+// import android.support.design.widget.Snackbar;
 import android.R;
 import android.util.Log;
 
